@@ -4,11 +4,22 @@
 <div id="nav-home">{% include 'nav.html' %}</div>
 <div id="fullpage">
     <div class="section" id="section1">
-        <div class="fp-bg" id="">
+        <div class="fp-bg">
+            <h1>NutriCO2</h1>
             <h3>Upload your recipes to 
                 <br>calculate their Nutritional Value
                 <br>and Carbon Footprint</h3>
+            
+            <div class="images"></div>
+                <img src="../images/background2.jpeg" />
+                <img src="/main_app/images/b1.jpg" />
+                <img src="../images/background1.png" />
+
+
+            
         </div>
+        
+
     </div>
 
     <div class="section" id="section2">
@@ -40,9 +51,10 @@
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.12/fullpage.min.js" integrity="sha512-2N6afhHcaOPaBztibhzvEp9MBtXoG+6YQ5AkllMJKHrZKUUiHHmIc1bEafMDjG+LnTtSIYjaKdg2BdZqqZkkBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {navigation: 'true', fixedElements: '#nav-home'});
 </script>
+
 
 {% endblock %}
