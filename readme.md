@@ -1,26 +1,28 @@
-**Project 03 - NutriCO2**
+# PROJECT 03 - NUTRICO2
 
-**Description**
+## Description:
 
 This was my third of four projects for the Software Engineering Immersive course run by General Assembly. The project was created over the course of a week and was a team effort created with one other; Einar Skreslett (https://github.com/eskres)
 
-**Deployment link**
+## Deployment link:
 
 Our project can be viewed by clicking this link. [https://bit.ly/Nutrico2](https://bit.ly/Nutrico2)
 
 (link doesnt work as trying to host project elsewhere now as Heroku are starting to charge)
+#
 
-## **Technologies Used:**
+## Technologies Used:
 
 I spent the previous two weeks prior to the course focusing on the below and used them to create our project:
 
 - Python
 - Django
 - SQL
+#
 
-## **Brief:**
+## **Brief:
 
-## The brief for the project stipulated the below:
+The brief for the project stipulated the below:
 
 - Create the application using at least 2 related models, one of which should be a user
 
@@ -57,8 +59,9 @@ A number of bonus options were also suggested:
 - Allow users to upload image files
 
 - Password reset using an email
+#
 
-## **Planning:**
+## Planning:
 
 As the General Assembly course was entirely remote we communicated exclusively through Zoom and Slack. We spent all working day on Zoom together and then (due to different schedules outside of the course) we communicated during the evenings and weekends via slack.
 
@@ -229,14 +232,16 @@ The results of which appeared as below:
 }
 
 We decided that although it was viable we would need to give the User the ability to edit the results of running an image through the image to text API to make the text more usable.
+#
 
-### **Wireframes**
+### Wireframe:
 
 I completed the Wireframe as below and Einar worked on the ERD.
 
 We had both previously expressed that we liked the Pinterest homepage so I incorporated this into my Wireframe. My full Wireframe can be viewed here (LINK)
+#
 
-### **User Stories**
+### User Stories:
 
 We created User Stories together which we used to 'tick off' features once complete:
 
@@ -252,15 +257,16 @@ We created User Stories together which we used to 'tick off' features once compl
 - As a user I want to be able to see the nutritional value of my recipes.
 - As a user I want to be able to see the C02e emissions of my recipes.
 
-**Trello Board:**
+## Trello Board:
 
 I then created a Trello Board and we both populated it with "To Do" tasks:
 
 ![](RackMultipart20221116-1-bb45wv_html_a569101de857090f.png)
 
 However, as time went on we didn't feel a need to use it. We were both clear on what we were doing as well as what each other were doing and were responsible for. Our communication throughout was also excellent; we were constantly updating each other with progress of what we were working on and effectively rendered our Trello board redundant.
+#
 
-**Delegation of work:**
+## Delegation of work:
 
 After a short discussion I volunteered to be Team Leader; my partner expressed they were a little uncomfortable presenting; something I was a little more confident with.
 
@@ -269,12 +275,13 @@ I was also keen to have first hand experience of managing merges and conflicts o
 We finalised our idea late on Friday and Einar advised he couldn't work on the project over the weekend so we agreed it best that I be responsible for creating the basic files/folders, functionality and user authorisation/authentication.
 
 Einar would focus on collating the necessary nutrition and emissions data as well as the headline features of connecting the image to text API and image upload etc.
+#
 
-## **Build/Code Process**
+## Build/Code Process
 
-### **Step 1:**
+### Step 1:
 
-### I created our base.html file and then extended the file to every other html page I had created; as well as the block content. I then populated each block content field to act as a placeholder on each file; for example the homepage and recipe detail files:
+I created our base.html file and then extended the file to every other html page I had created; as well as the block content. I then populated each block content field to act as a placeholder on each file; for example the homepage and recipe detail files:
 
 ![](RackMultipart20221116-1-bb45wv_html_36dde959af37f229.png)
 
@@ -294,7 +301,7 @@ I then ran migrations (python3 manage.py makemigrations/python3 manage.py migrat
 
 I was keen to make progress on the project and believing I could resolve the migration issue at a later stage I moved on.
 
-### **Step 2:**
+### Step 2:
 
 Einar had previously located fullPage.js ([https://alvarotrigo.com/fullPage/](https://alvarotrigo.com/fullPage/)) used on the Pinterest homepage. I set about implementing fullPage.js on our own project homepage.
 
@@ -322,7 +329,7 @@ I realised I should have linked to the external scripts before running the local
 
 This resulted in fullPage.js then working; the result of which can be seen on our deployed website.
 
-### **Step 3:**
+### Step 3:
 
 I further populated the urls.py file with urls for the CRUD operations of the recipes and ingredients:
 
@@ -336,13 +343,13 @@ Using our ERD as a guide I then started to populate our models:
 
 ![](RackMultipart20221116-1-bb45wv_html_26889a073e1ff884.png)
 
-**Step 4:**
+### Step 4:
 
 Having now created the CRUD operations and Models I thought it best I turn my attention back to connecting to pgAdmin. Coming back with fresh eyes I soon realised I hadn't imported the Recipe and Ingredient models into Views.py.
 
 Desipite having now done so the migrations still didn't populate pgAdmin so to be safe; I deleted all the existing numbered migration files in the migrations folder, renamed the database in Settings.py, created a new database in pgAdmin to match and then ran migrations again. This time the Tables folder in pgAdmin successfully populated.
 
-**Step 5:**
+### Step 5:
 
 I then started work on User Authentication and Authorisation as one of the major points of the brief was the below:
 
@@ -358,7 +365,7 @@ Before then adding a number of paths to urls.py:
 
 ![](RackMultipart20221116-1-bb45wv_html_d0a9d0eb266dc4b.png)
 
-**Step 6:**
+### Step 6:
 
 Our brief stipulated that we "give feedback to the user after each action, and after form submissions with success/failure" so I implemented success and error messages for things like adding a recipe; logging in/out and registration:
 
@@ -378,7 +385,7 @@ Which I then included on our nav.html file below the nav bar itself so all messa
 
 ![](RackMultipart20221116-1-bb45wv_html_bb69459b0c28ea1a.png)
 
-**Step 7:**
+### Step 7:
 
 I wasn't happy that I hadn't as of yet achieved the bonus goals I had set myself of:
 
@@ -423,22 +430,25 @@ The cryptographically secure emails appeared as below with a one-time link to a 
 By this point I had run out of time and didn't have a chance to either; update the emails with my own text or create our own 'set-password'/'reset/done' HTML pages to which I could extend our base.html file or bootstrap styling. Hence both pages currently use the Django administration templates:
 
 ![](RackMultipart20221116-1-bb45wv_html_a5c00c9d0e071892.png) ![](RackMultipart20221116-1-bb45wv_html_efbf4ce92ffdaee8.png)
+#
 
-## **Challenges**
+## Challenges:
 
 - In hindsight basing our project around two of the bonus options (Utilise 3rd party API's/Allow users to upload image files) wasn't the best idea. All other teams in our cohort had been placed in teams of 3 and we were the only pair so we were a little disadvantaged from the off. It was silly to have made the decision we did and forced ourselves into such a corner from day 1. We should have set our sights slightly lower; on a project that was easier to achieve in the given time frame to which we could then have connected a 3rd party API/user image upload if time allowed.
+#
 
-## **Wins**
+## Wins:
 
 - I was very happy to have successfully integrated the password reset by email. Although the resulting email only appears in VS Code and isn't sent to a user's email address I was the only individual in our cohort to achieve this; despite larger teams having people focused solely on authentication.
 - Our communication and teamwork were exemplary. We held catch ups at the start and end of each day, fixed multiple issues together whilst screen sharing and pair coding (via Live Share in VS Code) and when we weren't on zoom together we were in constant communication via slack.
+#
 
-## **Key Learnings & Takeaways:**
+## Key Learnings & Takeaways:
 
 - To always focus on the functionality first. There's no need to collect circa 400 data points; we could have created and tested our website with 20 data points and then added to our data at a later date. In hindsight as Team Leader this is something I should have voiced at the time.
 - As previously mentioned in Challenges we set our sights too high from the off; we should have set them slightly lower on a project more achievable in the timeframe. Had time allowed we could then have expanded our project and connected to an API.
 
-## **Bugs:**
+## Bugs:
 
 - When a new User clicks on Sign Up and then Register an alert appears in the browser (as below) before a User has even entered any information. It's also no possible to clear this message by pressing the 'X' to the right:
 
@@ -451,8 +461,9 @@ By this point I had run out of time and didn't have a chance to either; update t
 - The function to add customer ingredients to recipes doesn't work; if you attempt to do so you receive an " **IntegrityError"** message screen.
 - The View My Recipes page isn't linked to the specific user viewing the page. Any user that clicks this option receives the full list of recipes on the website as opposed to those uploaded to them and directly linked to their details.
 - The same goes for the View My Ingredients page; this lists all ingredients added by all users as opposed to those added by the specific user viewing the page.
+#
 
-## **Future Improvements:**
+## Future Improvements:
 
 - To resolve all of the above bugs.
 - To link email functionality to a server host (sendgrid or mailgun) so emails are sent to user's as opposed to just being created and stored in VS code.
