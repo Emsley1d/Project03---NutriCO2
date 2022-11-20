@@ -261,7 +261,7 @@ We created User Stories together which we used to 'tick off' features once compl
 
 I then created a Trello Board and we both populated it with "To Do" tasks:
 
-![](RackMultipart20221116-1-bb45wv_html_a569101de857090f.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.50.18.png)
 
 However, as time went on we didn't feel a need to use it. We were both clear on what we were doing as well as what each other were doing and were responsible for. Our communication throughout was also excellent; we were constantly updating each other with progress of what we were working on and effectively rendered our Trello board redundant.
 #
@@ -283,19 +283,19 @@ Einar would focus on collating the necessary nutrition and emissions data as wel
 
 I created our base.html file and then extended the file to every other html page I had created; as well as the block content. I then populated each block content field to act as a placeholder on each file; for example the homepage and recipe detail files:
 
-![](RackMultipart20221116-1-bb45wv_html_36dde959af37f229.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.51.18.png)
 
 I then started to populate some of the python files with the basics; for example the urls.py file:
 
-![](RackMultipart20221116-1-bb45wv_html_2dd2d21818e09ef8.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.51.27.png)
 
 And the view.py to tie the website together:
 
-![](RackMultipart20221116-1-bb45wv_html_cf6181a02ee03894.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.51.50.png)
 
 Before then creating some basic models:
 
-![](RackMultipart20221116-1-bb45wv_html_236505b097f015e9.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.52.00.png)
 
 I then ran migrations (python3 manage.py makemigrations/python3 manage.py migrate) to connect and push the tables to pgAdmin. However despite there being no error messages or problems the tables folder failed to populate in the Database.
 
@@ -307,25 +307,25 @@ Einar had previously located [fullPage.js](https://alvarotrigo.com/fullPage/) us
 
 I ran "npm install fullpage.js" to install fullPage.js. Then I linked the base.html file to the relevant stylesheets:
 
-![](RackMultipart20221116-1-bb45wv_html_a4da0cf095489fee.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.55.07.png)
 
 And then linked the home.html file to the relevant JS scripts as below:
 
-![](RackMultipart20221116-1-bb45wv_html_bcb915bd802d15f0.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.55.22.png)
 
 I then created the necessary divs with the relevant class names and IDs:
 
-![](RackMultipart20221116-1-bb45wv_html_9c1fcd0d7c7aad4d.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.55.30.png)
 
 This resulted in our homepage appearing as below:
 
-![](RackMultipart20221116-1-bb45wv_html_eb9a190fbca0344e.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.55.43.png)
 
 Each section (Food info/C02 info and Sign up) should have taken up the full height and width of the browser window. It should then have been possible to scroll up/down to move between each section.
 
 I realised I should have linked to the external scripts before running the local jQuery so moved the external scripts above. However I still couldn't get fullPage.js to work so I replaced the jQuery with Vanilla JS:
 
-![](RackMultipart20221116-1-bb45wv_html_c11c04bc42d983fb.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.55.53.png)
 
 This resulted in fullPage.js then working; the result of which can be seen on our deployed website.
 
@@ -333,15 +333,15 @@ This resulted in fullPage.js then working; the result of which can be seen on ou
 
 I further populated the urls.py file with urls for the CRUD operations of the recipes and ingredients:
 
-![](RackMultipart20221116-1-bb45wv_html_e29c680cbf52c069.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.57.25.png)
 
 Then started working on the CRUD operations themselves:
 
-![](RackMultipart20221116-1-bb45wv_html_44d273dfc8dc3738.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.57.35.png)
 
 Using our ERD as a guide I then started to populate our models:
 
-![](RackMultipart20221116-1-bb45wv_html_26889a073e1ff884.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.57.46.png)
 
 ### Step 4:
 
@@ -353,17 +353,19 @@ Desipite having now done so the migrations still didn't populate pgAdmin so to b
 
 I then started work on User Authentication and Authorisation as one of the major points of the brief was the below:
 
-●Add authentication AND authorisation (page protection) to restrict access to appropriate users
+- Add authentication AND authorisation (page protection) to restrict access to appropriate users
 
-I started to create a basic user model in models.py: ![](RackMultipart20221116-1-bb45wv_html_cb3be2218c555312.png)
+I started to create a basic user model in models.py: 
+
+![](./readme-images/Screenshot%202022-11-20%20at%2011.01.18.png)
 
 As well as a user/detail.html file in templates.I then started to replace some of the pseudo code I had previously written with authentication to secure a number of our pages from the options in the nav bar:
 
-![](RackMultipart20221116-1-bb45wv_html_ab4ebf639495dfe7.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.01.32.png)
 
 Before then adding a number of paths to urls.py:
 
-![](RackMultipart20221116-1-bb45wv_html_d0a9d0eb266dc4b.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.01.58.png)
 
 ### Step 6:
 
