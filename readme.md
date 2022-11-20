@@ -20,7 +20,7 @@ I spent the previous two weeks prior to the course focusing on the below and use
 - SQL
 #
 
-## **Brief:
+## Brief:
 
 The brief for the project stipulated the below:
 
@@ -93,9 +93,9 @@ However during our research for the above idea I found an image to text API whic
 
 Then we came up with the idea of a recipe app that provides users with nutritional information and the C02 emissions of raw ingredients. Users could upload a photo of ingredients from a recipe book; we would convert this to text and provide them with a list of nutritional information and the C02 emissions of the ingredients.
 
-I set about testing the API ([https://apilayer.com/marketplace/image\_to\_text-api](https://apilayer.com/marketplace/image_to_text-api)) to confirm if it was viable for our intended use. I located stock ingredients photos online and ran them through the API live demo:
+I set about testing the [API](https://apilayer.com/marketplace/image_to_text-api) to confirm if it was viable for our intended use. I located stock ingredients photos online and ran them through the API live demo:
 
-![](RackMultipart20221116-1-bb45wv_html_98c92d41cb2a1762.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2010.46.44.png)
 
 The results of which appeared as below:
 
@@ -303,7 +303,7 @@ I was keen to make progress on the project and believing I could resolve the mig
 
 ### Step 2:
 
-Einar had previously located fullPage.js ([https://alvarotrigo.com/fullPage/](https://alvarotrigo.com/fullPage/)) used on the Pinterest homepage. I set about implementing fullPage.js on our own project homepage.
+Einar had previously located [fullPage.js](https://alvarotrigo.com/fullPage/) used on the Pinterest homepage. I set about implementing fullPage.js on our own project homepage.
 
 I ran "npm install fullpage.js" to install fullPage.js. Then I linked the base.html file to the relevant stylesheets:
 
@@ -469,7 +469,7 @@ By this point I had run out of time and didn't have a chance to either; update t
 - To link email functionality to a server host (sendgrid or mailgun) so emails are sent to user's as opposed to just being created and stored in VS code.
 - To improve upon the email functionality and user experience by sending an email to the user to confirm registration.
 - To populate the about page with information about ourselves and an explanation as to where we got our data from. It is currently just a placeholder and needs to be populated; we were using it to experiment with a carousel effect.
-- To include pagination (another bonus objective mentioned in the brief) when the number of recipes added re
+- To include pagination (another bonus objective mentioned in the brief) when the number of recipes added reaches a point where it is no longer logical to conitnue scrolling down a page. 
 - To update the set-password and reset/done HTML pages from the Django templates to our own HTML pages with base.html etc.
 - Allow users to upload a profile picture which will appear on the right of the nav bar.
 - Update the edit page to allow users to change their profile picture as well as their email address etc.
