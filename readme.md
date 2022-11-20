@@ -371,21 +371,21 @@ Before then adding a number of paths to urls.py:
 
 Our brief stipulated that we "give feedback to the user after each action, and after form submissions with success/failure" so I implemented success and error messages for things like adding a recipe; logging in/out and registration:
 
-![](RackMultipart20221116-1-bb45wv_html_69cc07f9e58a0cae.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.04.49.png)
 
 However; I then realised I would have to create classes and CSS styling for each type of message; success, error, warning etc. I thought there must be a better way to implement messages and their different types. I researched what was available in Django and settled on the inbuilt messages framework.
 
 to do so via Django's inbuilt messages framework; meaning I could take advantage of each messages styling:
 
-![](RackMultipart20221116-1-bb45wv_html_889c238e281a8342.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.04.59.png)
 
 So each message appeared in exactly the same place (regardless of what page you were on) I created a messages.html file:
 
-![](RackMultipart20221116-1-bb45wv_html_9e99e9746777425b.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.05.10.png)
 
 Which I then included on our nav.html file below the nav bar itself so all messages would appear directly below the nav:
 
-![](RackMultipart20221116-1-bb45wv_html_bb69459b0c28ea1a.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.05.22.png)
 
 ### Step 7:
 
@@ -401,37 +401,38 @@ I researched the best way of achieving the verification and password reset by em
 
 I learnt that Auth provides several authentication views and URLs for handling login, logout, and password management:
 
-![](RackMultipart20221116-1-bb45wv_html_c13f40bd370aa003.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.07.45.png)
 
 And each URL has an associated auth view to which I only needed to create a template to use. For example; to create a login page I just needed to create a login.html file within a folder called registration which itself was in a folder called templates. Then make reference to the registration folder within templates in settings.py.
 
 Then in views.py I created my own SignupView, PasswordChange and PasswordReset classes:
 
-![](RackMultipart20221116-1-bb45wv_html_9f4b7644ef266d7b.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.07.53.png)
 
 I discovered I had to use reverse\_lazy for the success\_urls because for all generic class-based views the urls are not loaded when the file is imported, so I had to use the lazy form of reverse to load them later when they were available.
 
 I then created my own password\_change and password\_change/done html pages to replace the existing Django administration templates:
 
-![](RackMultipart20221116-1-bb45wv_html_fd17518cac57fef3.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.08.13.png)
 
-![](RackMultipart20221116-1-bb45wv_html_81d5921ecc5b1d5e.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.08.56.png)
 
 As well as my own password\_reset and password\_reset/done pages:
 
-![](RackMultipart20221116-1-bb45wv_html_76688536f3755ea2.png) ![](RackMultipart20221116-1-bb45wv_html_7c6ac0d656dc2eb7.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.09.17.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.09.31.png)
 
 Although I never achieved sending a verification email upon registration I did however achieve the stretch goal of Password reset by email. Albeit there was no back end email client (such as MailGun or SendGrid) so the emails weren't sent to registered users but instead stored in a sent\_emails folder which I achieved by adding the below to settings.py:
 
-![](RackMultipart20221116-1-bb45wv_html_30b09862429fad49.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.09.53.png)
 
 The cryptographically secure emails appeared as below with a one-time link to a password reset page:
 
-![](RackMultipart20221116-1-bb45wv_html_24b4baf95dc0abd3.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.10.03.png) 
 
 By this point I had run out of time and didn't have a chance to either; update the emails with my own text or create our own 'set-password'/'reset/done' HTML pages to which I could extend our base.html file or bootstrap styling. Hence both pages currently use the Django administration templates:
 
-![](RackMultipart20221116-1-bb45wv_html_a5c00c9d0e071892.png) ![](RackMultipart20221116-1-bb45wv_html_efbf4ce92ffdaee8.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.10.34.png)
 #
 
 ## Challenges:
@@ -454,11 +455,12 @@ By this point I had run out of time and didn't have a chance to either; update t
 
 - When a new User clicks on Sign Up and then Register an alert appears in the browser (as below) before a User has even entered any information. It's also no possible to clear this message by pressing the 'X' to the right:
 
-![](RackMultipart20221116-1-bb45wv_html_c0a751274f295b7a.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.21.56.png)
 
 - The image location appears in both the Recipe index and the Recipe itself if you view the individual Recipe page:
 
-![](RackMultipart20221116-1-bb45wv_html_5b4b276141285804.png) ![](RackMultipart20221116-1-bb45wv_html_376aa99a9237093d.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.22.23.png)
+![](./readme-images/Screenshot%202022-11-20%20at%2011.22.47.png)
 
 - The function to add customer ingredients to recipes doesn't work; if you attempt to do so you receive an " **IntegrityError"** message screen.
 - The View My Recipes page isn't linked to the specific user viewing the page. Any user that clicks this option receives the full list of recipes on the website as opposed to those uploaded to them and directly linked to their details.
