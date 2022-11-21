@@ -18,6 +18,16 @@ I spent the previous two weeks prior to the course focusing on the below and use
 - Python
 - Django
 - SQL
+
+In addition to the above I used:
+
+- Boostrap
+- CSS
+- FullPage.js
+- HTML
+- JavaScript
+- jQuery
+
 #
 
 ## Brief:
@@ -63,7 +73,7 @@ A number of bonus options were also suggested:
 
 ## Planning:
 
-As the General Assembly course was entirely remote we communicated exclusively through Zoom and Slack. We spent all working day on Zoom together and then (due to different schedules outside of the course) we communicated during the evenings and weekends via slack.
+As the General Assembly course was entirely remote we communicated exclusively through Zoom and Slack. We spent all working day on Zoom together and then (due to different schedules outside of the course) we communicated during the evenings and weekends via Slack.
 
 We discussed the Technical Requirements and from the off decided we wanted to push ourselves and strive for a number of the bonus options; these being:
 
@@ -245,9 +255,7 @@ Our brief stipulated that we "give feedback to the user after each action, and a
 
 ![](./readme-images/Screenshot%202022-11-20%20at%2011.04.49.png)
 
-However; I then realised I would have to create classes and CSS styling for each type of message; success, error, warning etc. I thought there must be a better way to implement messages and their different types. I researched what was available in Django and settled on the inbuilt messages framework.
-
-to do so via Django's inbuilt messages framework; meaning I could take advantage of each messages styling:
+However; I then realised I would have to create classes and CSS styling for each type of message; success, error, warning etc. I thought there must be a better way to implement messages and their different types. I researched what was available in Django and settled on the inbuilt messages framework:
 
 ![](./readme-images/Screenshot%202022-11-20%20at%2011.04.59.png)
 
@@ -315,7 +323,7 @@ By this point I had run out of time and didn't have a chance to either; update t
 ## Wins:
 
 - I was very happy to have successfully integrated the password reset by email. Although the resulting email only appears in VS Code and isn't sent to a user's email address I was the only individual in our cohort to achieve this; despite larger teams having people focused solely on authentication.
-- Our communication and teamwork were exemplary. We held catch ups at the start and end of each day, fixed multiple issues together whilst screen sharing and pair coding (via Live Share in VS Code) and when we weren't on zoom together we were in constant communication via slack.
+- Our communication and teamwork were exemplary. We held catch ups at the start and end of each day, fixed multiple issues together whilst screen sharing and pair coding (via Live Share in VS Code) and when we weren't on Zoom together we were in constant communication via Slack.
 #
 
 ## Key Learnings & Takeaways:
@@ -345,7 +353,7 @@ By this point I had run out of time and didn't have a chance to either; update t
 - To link email functionality to a server host (sendgrid or mailgun) so emails are sent to user's as opposed to just being created and stored in VS code.
 - To improve upon the email functionality and user experience by sending an email to the user to confirm registration.
 - To populate the about page with information about ourselves and an explanation as to where we got our data from. It is currently just a placeholder and needs to be populated; we were using it to experiment with a carousel effect.
-- To include pagination (another bonus objective mentioned in the brief) when the number of recipes added reaches a point where it is no longer logical to conitnue scrolling down a page. 
+- To include pagination (another bonus objective mentioned in the brief) when the number of recipes added reaches a point where it is no longer logical to continue scrolling down the page. 
 - To update the set-password and reset/done HTML pages from the Django templates to our own HTML pages with base.html etc.
 - Allow users to upload a profile picture which will appear on the right of the nav bar.
 - Update the edit page to allow users to change their profile picture as well as their email address etc.
