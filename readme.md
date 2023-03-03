@@ -6,9 +6,9 @@ This was my third of four projects for the Software Engineering Immersive course
 
 ## Deployment link:
 
-Our project can be viewed by clicking this link. [https://bit.ly/Nutrico2](https://bit.ly/Nutrico2)
+Our project can be viewed [here](bit.ly/NutriCO2).
 
-(link doesnt work as trying to host project elsewhere now as Heroku are starting to charge)
+
 #
 
 ## Technologies Used:
