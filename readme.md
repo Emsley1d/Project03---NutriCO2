@@ -2,11 +2,11 @@
 
 ## Description:
 
-This was my third of four projects for the Software Engineering Immersive course run by General Assembly. The project was created over the course of a week and was a team effort created with one other; Einar Skreslett (https://github.com/eskres)
+This was my third of four projects for the Software Engineering Immersive course run by General Assembly. The project was created over the course of a week and was a team effort created with one other; [Einar Skreslett](https://github.com/eskres).
 
 ## Deployment link:
 
-Our project can be viewed [here](bit.ly/NutriCO2).
+Our project can be viewed [here](https://nutrico2.skreslett.com/).
 
 
 #
