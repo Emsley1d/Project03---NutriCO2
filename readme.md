@@ -118,9 +118,9 @@ We decided that although it was viable we would need to give the User the abilit
 
 ### Wireframe:
 
-I completed the Wireframe as below and Einar worked on the ERD.
+I completed the Wireframe and Einar worked on the ERD.
 
-We had both previously expressed that we liked the Pinterest homepage so I incorporated this into my Wireframe. My full Wireframe can be viewed here (LINK)
+We had both previously expressed that we liked the [Pinterest](https://www.pinterest.co.uk/) homepage so I incorporated this into my [Wireframe](https://github.com/Emsley1d/Project03-NutriCO2/blob/master/Wireframe.png)
 #
 
 ### User Stories:
@@ -138,6 +138,7 @@ We created User Stories together which we used to 'tick off' features once compl
 - As a user I want to be able to edit or delete my recipes.
 - As a user I want to be able to see the nutritional value of my recipes.
 - As a user I want to be able to see the C02e emissions of my recipes.
+#
 
 ## Trello Board:
 
